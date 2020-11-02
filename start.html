@@ -3,16 +3,20 @@
 
 <head>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>New Tab</title>
 </head>
 
 <body>
-	<div class="search_block">
-		<form id="search_eng_form" method="get" action="https://www.duckduckgo.com/">
-		<button type="button" class="se_btn" id="se_button"><img id="se_icon"src="icons/ddg.svg" class="filter-white"></button><input type="search" id="search" placeholder="DuckDuckGo search" autocomplete="off" autofocus><button type="submit" class="go" id="go_btn">GO</button>
-		</form>
-    </div>
-    <script async type="text/javascript" src="script.js"></script>
+	<form id="search" method="get" action="https://www.duckduckgo.com/">
+		<button type="button" id="search_switch">
+			<img src="icons/ddg.svg" id="search_logo">
+		</button>
+		<input type="search" id="search_input" name="q" placeholder="DuckDuckGo search" autocomplete="off" autofocus>
+		<button type="submit">GO</button>
+	</form>
+	<script async type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
