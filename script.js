@@ -14,10 +14,16 @@ const search_engines = [{
         src: "youtube.svg",
         placeholder: "YouTube",
         action: "https://www.youtube.com/results"
-    }],
-    form = document.getElementById("search"),
-    logo = document.getElementById("search_logo"),
-    input = document.getElementById("search_input");
+    }, {
+        src: "gh.svg",
+        placeholder: "GitHub",
+        action: "https://github.com/search"
+    }
+];
+
+form = document.getElementById("search");
+logo = document.getElementById("search_logo");
+input = document.getElementById("search_input");
 
 function change_engine(search_engine) {
     input.setAttribute("placeholder", `${search_engine.placeholder} search`);
