@@ -1,3 +1,4 @@
+var base_color = "#01111D";
 var search_engines = [{
         "name": "DuckDuckGo",
         "src": "ddg.svg",
